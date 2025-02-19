@@ -1,0 +1,14 @@
+D:\2025\web\nova\domain\src\main\java\nova\domain\actividad\model\HorarioOperativo.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\actividad\port\EstatusDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\empleado\model\Empleado.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\empleado\port\EmpleadoDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\model\AreaSeguimiento.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\model\Empresa.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\model\Unidad.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\port\AreaSeguimientoDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\port\DepartamentoDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\port\EmpresaDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\port\PuestoDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\port\UnidadNegocioDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\port\UnidadOperacionDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\localizacion\port\EstadoDao.java

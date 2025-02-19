@@ -1,0 +1,14 @@
+nova\domain\empleado\port\EmpleadoDao.class
+nova\domain\empresa\model\AreaSeguimiento.class
+nova\domain\actividad\model\HorarioOperativo.class
+nova\domain\empresa\port\DepartamentoDao.class
+nova\domain\empresa\port\UnidadOperacionDao.class
+nova\domain\empleado\model\Empleado.class
+nova\domain\empresa\port\PuestoDao.class
+nova\domain\actividad\port\EstatusDao.class
+nova\domain\empresa\port\AreaSeguimientoDao.class
+nova\domain\empresa\port\EmpresaDao.class
+nova\domain\localizacion\port\EstadoDao.class
+nova\domain\empresa\model\Unidad.class
+nova\domain\empresa\model\Empresa.class
+nova\domain\empresa\port\UnidadNegocioDao.class

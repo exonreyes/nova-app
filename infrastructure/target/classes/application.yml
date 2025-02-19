@@ -1,0 +1,96 @@
+application:
+  { title: "Nova App",
+    version: 1.0.0,
+    dev: "Pablo Reyes Lorenzo",
+    description: "Sistema base para desarrollo de proyectos webservices",
+    derechos: "© 2025 Pablo Reyes Lorenzo. Todos los derechos reservados."
+  }
+server:
+  error:
+    include-stacktrace: on_param
+  port: 4001
+  address: 0.0.0.0
+  compression:
+    enabled: true
+    mime-types: text/html,text/css,application/javascript, application/json
+  servlet:
+    context-path: /comialex/api/v1
+    session:
+      timeout: 21600s
+spring:
+  jackson:
+    time-zone: America/Mexico_City
+    default-property-inclusion: non_null
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/comialex?useSSL=false
+    username: root
+    password: exon1704
+    hikari:
+      maximum-pool-size: 30
+      connection-timeout: 30000  # 30 segundos
+      idle-timeout: 600000       # 10 minutos
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+    properties:
+      hibernate:
+        default_schema: comialex
+    #        format_sql: true
+    show-sql: true
+    open-in-view: false
+  application:
+    name: comialex-it
+    #Latencia en la primera solicitud.
+    #    Dado que los beans no se crean hasta que son necesarios, la primera solicitud HTTP que
+    #    activa la creación de un bean específico experimentará un retraso adicional.
+    #    Este retraso se debe a que Spring necesita tiempo para crear e inicializar el bean antes
+    #    de procesar la solicitud. Para un ambiente web es mejor que esté en FALSE
+    #  main:
+    #    lazy-initialization: true
+#
+#logging:
+#  level:
+#    root: warn
+#logging:
+#  level:
+#    root: debug
+#    org.springframework.web: info
+#    org.springframework.web.servlet.DispatcherServlet: INFO
+#  file:
+#    path: logs
+#    name: application.log
+#  pattern:
+#    console: "%d{HH:mm:ss.SSS} [%thread] %msg%n"
+#    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+logging:
+  # Nivel global de logging
+  level:
+    root: INFO  # Nivel de log para la raíz de la aplicación
+  #    com.comialex.helpdesk.ticket: DEBUG  # Nivel de log para un paquete específico
+
+  # Formato del log en consola
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"  # Formato de log para consola
+
+    # Formato del log en archivo
+    #    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"  # Formato de log para archivo
+    #    file: "%d{yyyy-MM-dd HH:mm:ss} - %-5level - %logger{36} - %msg%n"  # Formato detallado para archivo
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %-5level - %logger{36} - %msg%n%throwable"  # Esto incluye el stack, trace en el archivo
+
+  # Configuración del archivo de logs
+  file:
+    name: logs/application.log  # Nombre del archivo de log
+
+  logback:
+    rolling policy:
+      max-file-size: 10MB
+      max-history: 30
+      total-size-cap: 100MB
+
+  # Configuraciones adicionales como logs de excepciones
+  exception-pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %-5level - %logger{36} - %msg%n%throwable"  # Imprimir el stack trace de excepciones en consola
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %-5level - %logger{36} - %msg%n%throwable"  # Imprimir stack trace en archivo

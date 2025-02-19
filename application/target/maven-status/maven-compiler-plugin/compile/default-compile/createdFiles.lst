@@ -1,0 +1,7 @@
+nova\application\empresa\AreaSeguimientoHandler.class
+nova\application\empresa\PuestoHandler.class
+nova\application\empresa\EmpresaHandler.class
+nova\application\empresa\UnidadNegocioHandler.class
+nova\application\empleado\EmpleadoHandler.class
+nova\application\actividad\EstatusSeguimientoHandler.class
+nova\application\localizacion\EstadoHandler.class

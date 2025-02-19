@@ -1,0 +1,7 @@
+=================
+APP | WEBSERVICE: ${application.title} ${application.version}
+TECNOLOGIA: Spring Boot version ${spring-boot.version}
+DESCRIPCION: ${application.description}
+DEV: ${application.dev}
+${application.derechos}
+=================
