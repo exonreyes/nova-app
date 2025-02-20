@@ -17,7 +17,7 @@ public class ReporteTicketModel {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_area")
-    private AreaSeguimientoModel idArea;
+    private AreaSeguimientoModel area;
 
     @Column(name = "nombre", nullable = false)
     private String nombre;
