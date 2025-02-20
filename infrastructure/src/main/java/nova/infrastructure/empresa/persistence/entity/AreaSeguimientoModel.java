@@ -30,7 +30,7 @@ public class AreaSeguimientoModel {
     @Column(name = "externo")
     private Boolean externo;
 
-    @OneToMany(mappedBy = "idArea")
+    @OneToMany(mappedBy = "area")
     private Set<ReporteTicketModel> reporteTickets = new LinkedHashSet<>();
 
 }
