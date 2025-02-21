@@ -3,6 +3,7 @@ package nova.domain.empresa.model;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import nova.core.FolioBase36;
 import nova.core.actividad.Estatus;
 import nova.core.actividad.Reporte;
 import nova.core.persona.Persona;
@@ -10,6 +11,7 @@ import nova.domain.actividad.model.Seguimiento;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 @Getter
 @Setter
@@ -41,5 +43,11 @@ public class Ticket {
         this.agente = agente;
         this.estatus = new Estatus(estatus);
         this.creado = creado;
+    }
+
+    public void setFolio(String data) {
+        this.folio = Optional.ofNullable(data)
+                .filter(folio -> !folio.isBlank())
+                .orElse(FolioBase36.generar());
     }
 }
