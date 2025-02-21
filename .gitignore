@@ -23,3 +23,11 @@
 hs_err_pid*
 /.idea/
 /logs/
+/infrastructure/target/
+/domain/target/
+/core/target/
+/application/target
+/bootstrap/target/
+
+nova-sci.iml
+/.mvn/
