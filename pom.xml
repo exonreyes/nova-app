@@ -9,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>nova</groupId>
-    <artifactId>nova-app</artifactId>
+    <artifactId>nova-sci</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>nova</name>
-    <description>nova</description>
+    <name>sci</name>
+    <description>Procesos internos del departamento IT Comialex</description>
     <modules>
         <module>core</module>
         <module>bootstrap</module>
