@@ -14,13 +14,6 @@ public interface AreaSeguimientoRepository extends JpaRepository<AreaSeguimiento
     @Query("select a from AreaSeguimientoModel a where a.empresa.id = ?1")
     List<AreaSeguimientoModel> obtenerPorEmpresaConReportes(Integer id);
 
-
-    /**
-     * Obtiene areas internas o externas con reportes asociados
-     *
-     * @param externo si es externo o no
-     * @return lista de areas con reportes asociados
-     */
     @Query("select a from AreaSeguimientoModel a where a.externo = ?1")
     @EntityGraph(attributePaths = {"reporteTickets"})
     List<AreaSeguimientoModel> obtenerConReportes(Boolean externo);
@@ -30,6 +23,4 @@ public interface AreaSeguimientoRepository extends JpaRepository<AreaSeguimiento
     @EntityGraph(attributePaths = {"reporteTickets"})
     @Query("select a from AreaSeguimientoModel a")
     List<AreaSeguimientoModel> obtenerConReportes();
-
-
 }
