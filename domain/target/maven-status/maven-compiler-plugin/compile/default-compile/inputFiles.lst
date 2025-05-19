@@ -1,9 +1,12 @@
 D:\2025\web\nova\domain\src\main\java\nova\domain\actividad\model\HorarioOperativo.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\actividad\model\Seguimiento.java
 D:\2025\web\nova\domain\src\main\java\nova\domain\actividad\port\EstatusDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\cuenta\Credencial.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\cuenta\Proveedor.java
 D:\2025\web\nova\domain\src\main\java\nova\domain\empleado\model\Empleado.java
 D:\2025\web\nova\domain\src\main\java\nova\domain\empleado\port\EmpleadoDao.java
 D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\model\AreaSeguimiento.java
-D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\model\Empresa.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\model\Ticket.java
 D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\model\Unidad.java
 D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\port\AreaSeguimientoDao.java
 D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\port\DepartamentoDao.java
@@ -12,3 +15,10 @@ D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\port\PuestoDao.java
 D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\port\UnidadNegocioDao.java
 D:\2025\web\nova\domain\src\main\java\nova\domain\empresa\port\UnidadOperacionDao.java
 D:\2025\web\nova\domain\src\main\java\nova\domain\localizacion\port\EstadoDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\ticket\port\dao\TicketDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\ticket\port\dao\TicketFiltroDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\ticket\port\dao\TicketSeguimientoDao.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\ticket\port\repository\SeguimientoRepository.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\ticket\port\repository\TicketRepository.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\ticket\util\TicketCommand.java
+D:\2025\web\nova\domain\src\main\java\nova\domain\ticket\util\TicketFiltro.java
